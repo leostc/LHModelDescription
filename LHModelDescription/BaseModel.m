@@ -30,11 +30,11 @@
 
 -(instancetype)init{
     if (self = [super init]) {
-        _str = @"abc";
-        _dic = @{@"a":@"this",
-                 @"b":@"is",
-                 @"c":@"a test"};
-        _arr = @[@"a",@"asd"];
+        _str = @"appledev.me";
+        _dic = @{@"1":@"this",
+                 @"2":@"is",
+                 @"3":@"a test"};
+        _arr = @[@"more",@"infomation",@"in",@"appledev.me"];
         _varInt = 100;
         _varBool = YES;
         _varlong = 1100000l;

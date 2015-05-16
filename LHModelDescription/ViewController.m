@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "BaseModel.h"
+#import "Model1.h"
 
 @interface ViewController ()
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    BaseModel *model = [[BaseModel alloc]init];
+    Model1 *model = [[Model1 alloc]init];
     NSLog(@"%@",model);
 }
 

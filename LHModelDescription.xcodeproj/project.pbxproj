@@ -16,6 +16,7 @@
 		CDE97E881B05EE5300EBD0A5 /* LHModelDescriptionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE97E871B05EE5300EBD0A5 /* LHModelDescriptionTests.m */; };
 		CDE97E931B05EE7300EBD0A5 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE97E921B05EE7300EBD0A5 /* BaseModel.m */; };
 		CDE97E961B05EF1B00EBD0A5 /* BaseModel+Description.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE97E951B05EF1B00EBD0A5 /* BaseModel+Description.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CDE97E991B07489C00EBD0A5 /* Model1.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE97E981B07489C00EBD0A5 /* Model1.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		CDE97E921B05EE7300EBD0A5 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		CDE97E941B05EF1B00EBD0A5 /* BaseModel+Description.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BaseModel+Description.h"; sourceTree = "<group>"; };
 		CDE97E951B05EF1B00EBD0A5 /* BaseModel+Description.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BaseModel+Description.m"; sourceTree = "<group>"; };
+		CDE97E971B07489C00EBD0A5 /* Model1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model1.h; sourceTree = "<group>"; };
+		CDE97E981B07489C00EBD0A5 /* Model1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model1.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				CDE97E701B05EE5300EBD0A5 /* AppDelegate.m */,
 				CDE97E721B05EE5300EBD0A5 /* ViewController.h */,
 				CDE97E731B05EE5300EBD0A5 /* ViewController.m */,
+				CDE97E971B07489C00EBD0A5 /* Model1.h */,
+				CDE97E981B07489C00EBD0A5 /* Model1.m */,
 				CDE97E911B05EE7300EBD0A5 /* BaseModel.h */,
 				CDE97E921B05EE7300EBD0A5 /* BaseModel.m */,
 				CDE97E941B05EF1B00EBD0A5 /* BaseModel+Description.h */,
@@ -230,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE97E741B05EE5300EBD0A5 /* ViewController.m in Sources */,
+				CDE97E991B07489C00EBD0A5 /* Model1.m in Sources */,
 				CDE97E711B05EE5300EBD0A5 /* AppDelegate.m in Sources */,
 				CDE97E961B05EF1B00EBD0A5 /* BaseModel+Description.m in Sources */,
 				CDE97E931B05EE7300EBD0A5 /* BaseModel.m in Sources */,
@@ -428,6 +434,7 @@
 				CDE97E8D1B05EE5300EBD0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDE97E8E1B05EE5300EBD0A5 /* Build configuration list for PBXNativeTarget "LHModelDescriptionTests" */ = {
 			isa = XCConfigurationList;
@@ -436,6 +443,7 @@
 				CDE97E901B05EE5300EBD0A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

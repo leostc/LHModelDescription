@@ -23,14 +23,7 @@
         if ([stringType hasPrefix:@"@"]) {
             id obj = object_getIvar(self, thisIvar);
             if (obj) {
-                if ([obj isKindOfClass:[NSDictionary class]] ||
-                    [obj isKindOfClass:[NSArray class]] ||
-                    [obj isKindOfClass:[NSSet class]] ||
-                    [obj isKindOfClass:[self class]]) {
-                    [dic setObject:obj forKey:key];
-                } else {
-                    [dic setObject:[obj description] forKey:key];
-                }
+                [dic setObject:obj forKey:key];
             } else {
                 [dic setObject:@"nil" forKey:key];
             }
@@ -54,6 +47,14 @@
             BOOL value;
             object_getInstanceVariable(self, ivar_getName(thisIvar), (void*)&value);
             [dic setObject:value?@"YES":@"NO" forKey:key];
+        } else if([stringType hasPrefix:@"c"]) {
+            char value;
+            object_getInstanceVariable(self, ivar_getName(thisIvar), (void*)&value);
+            [dic setObject:[NSString stringWithFormat:@"%c",value] forKey:key];
+        } else if([stringType hasPrefix:@"*"]) {
+            char* value;
+            object_getInstanceVariable(self, ivar_getName(thisIvar), (void*)&value);
+            [dic setObject:[NSString stringWithUTF8String:value] forKey:key];
         } else {
             [dic setObject:[NSString stringWithFormat:@"cannott recoginze %@",stringType] forKey:key];
         }

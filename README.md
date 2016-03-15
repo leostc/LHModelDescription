@@ -9,7 +9,7 @@ LHModelDescription
 	
 	通过覆写BaseModel的description方法，为所有继承BaseModel的类实现了NSLog打印对象内的变量
 
-More infomation in [My Blog(我的博客)](http://appledev.me/blog/2015/05/15/tong-guo-descriptionshi-xian-nslogda-yin-dui-xiang-nei-de-bian-liang/)
+More infomation in [My Blog(我的博客)](http://idatadev.com/2015/05/04/tong-guo-descriptionshi-xian-nslogda-yin-dui-xiang-nei-de-bian-liang/)
 
 # License
 
